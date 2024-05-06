@@ -26,6 +26,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         easy.h easy.cpp easy.ui
         res.qrc
         box.h box.cpp box.ui
+        figure.h figure.cpp figure.ui
+
 
     )
 # Define target properties for Android with Qt 6 as:

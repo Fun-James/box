@@ -4,5 +4,6 @@
         <file>img/boxopened.png</file>
         <file>img/boxclosed.png</file>
         <file>img/图片1.png</file>
+        <file>img/bird.png</file>
     </qresource>
 </RCC>

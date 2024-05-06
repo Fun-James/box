@@ -10,6 +10,7 @@
 #include <QPoint>
 #include <QDebug>
 #include <QPropertyAnimation>
+#include <Qvector>
 
 namespace Ui {
 class Box;
@@ -28,11 +29,11 @@ public:
     void mouseMoveEvent(QMouseEvent *event);
     void mouseReleaseEvent(QMouseEvent *event);
     void onTimeout();
-
+    int rnumber;
+    int getNumber();
 private:
     Ui::Box *ui;
     QGraphicsOpacityEffect *oeffect=new QGraphicsOpacityEffect;
-    int rnumber;
     int status=0;
     QPoint dragStartPosition; // 用于保存拖动起始位置
     bool dragging;            // 标志是否正在拖动

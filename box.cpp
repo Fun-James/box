@@ -15,8 +15,10 @@ Box::Box(QWidget *parent)
     ui->bubble->setGraphicsEffect(oeffect);
     oeffect->setOpacity(0);
     ui->numberLabel->hide();
-    QRandomGenerator randomGen;
+
+
     rnumber=QRandomGenerator::global()->bounded(90000000) + 10000000;
+
     // 将int转换为QString并设置到label上
     ui->numberLabel->setText(QString::number(rnumber));
 
@@ -90,4 +92,9 @@ void Box::mouseReleaseEvent(QMouseEvent *event)
 {
     Q_UNUSED(event);
     dragging = false;
+}
+
+int Box::getNumber()
+{
+    return rnumber;
 }
