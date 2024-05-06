@@ -41,5 +41,5 @@ bool Figure::isOverlap(const QRect& boxRect)
     int overlapArea = intersectRect.width() * intersectRect.height();
     int boxArea = boxRect.width() * boxRect.height();
     double overlapRatio = static_cast<double>(overlapArea) / boxArea;
-    return overlapRatio >= 0.5; // 重合面积占Box面积的50%以上视为大部分重合
+    return overlapRatio >= 0.6; // 重合面积占Box面积的60%以上视为大部分重合
 }

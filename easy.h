@@ -4,6 +4,9 @@
 #include <QMainWindow>
 #include <QWidget>
 #include <QVector>
+#include <QTimer>
+#include <QTime>
+#include <QLabel>
 #include "box.h"
 #include "figure.h"
 
@@ -22,6 +25,15 @@ public:
 
 private:
     Ui::Easy *ui;
+    QTimer *timer;
+    QTime timeElapsed;
+    QLabel *timeLabel;
+    void updateTimer();
+    void onPairMatched();
+    void stopTimer() ;
+
+private slots:
+    void onTimerTimeout();
 };
 
 #endif // EASY_H
