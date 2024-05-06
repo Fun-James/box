@@ -6,7 +6,10 @@
 #include<QString>
 #include<QTimer>
 #include"easy.h"
-
+#include <QPixmap>
+#include <QPainter>
+#include<QRect>
+#include<QPaintEvent>
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class Login;
@@ -20,6 +23,7 @@ class Login : public QMainWindow
 public:
     Login(QWidget *parent = nullptr);
     ~Login();
+    void paintEvent(QPaintEvent *event);
 
 public slots:
     void Push_on_Go();
@@ -27,6 +31,6 @@ public slots:
 
 private:
     Ui::Login *ui;
-
+    QPixmap backgroundPixmap;
 };
 #endif // LOGIN_H
