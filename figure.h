@@ -28,9 +28,21 @@ public:
     {
         return fignumber;
     }
+    bool isMatched()
+    {
+        if(disappear==true)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 private:
     Ui::Figure *ui;
     int fignumber;
+    bool disappear=false;
 
 };
 

@@ -31,6 +31,7 @@ private:
     void updateTimer();
     void onPairMatched();
     void stopTimer() ;
+    bool checkAllMatched();
 
 private slots:
     void onTimerTimeout();

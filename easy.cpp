@@ -59,8 +59,23 @@ Easy::~Easy()
 void Easy::onTimerTimeout() {
     timeElapsed = timeElapsed.addSecs(1);
     updateTimer();
+    if (checkAllMatched())
+    {
+        timer->stop(); // 停止计时器
+    }
 }
 
 void Easy::updateTimer() {
     timeLabel->setText(timeElapsed.toString("mm:ss"));
+}
+
+bool Easy::checkAllMatched() {
+    for (int i = 1; i <= 9; i++) {
+        QString figName = QString("bird%1").arg(i);
+        Figure *figure = findChild<Figure*>(figName);
+        if (figure && !figure->isMatched()) {
+            return false; // 如果有任何未匹配的Figure，返回false
+        }
+    }
+    return true; // 所有Figure都已匹配
 }
