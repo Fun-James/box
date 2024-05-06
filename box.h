@@ -11,6 +11,7 @@
 #include <QDebug>
 #include <QPropertyAnimation>
 #include <Qvector>
+#include "figure.h"
 
 namespace Ui {
 class Box;

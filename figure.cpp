@@ -33,3 +33,13 @@ void Figure::setFigureNumber(int n)
     fignumber=n;
     ui->numberLabel->setText(QString::number(fignumber));
 }
+
+bool Figure::isOverlap(const QRect& boxRect)
+{
+    QRect figureRect = geometry();
+    QRect intersectRect = figureRect.intersected(boxRect);
+    int overlapArea = intersectRect.width() * intersectRect.height();
+    int boxArea = boxRect.width() * boxRect.height();
+    double overlapRatio = static_cast<double>(overlapArea) / boxArea;
+    return overlapRatio >= 0.5; // 重合面积占Box面积的50%以上视为大部分重合
+}

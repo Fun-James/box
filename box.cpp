@@ -92,6 +92,22 @@ void Box::mouseReleaseEvent(QMouseEvent *event)
 {
     Q_UNUSED(event);
     dragging = false;
+
+    QRect boxRect = geometry();
+    QList<Figure*> figures = parentWidget()->findChildren<Figure*>();
+    for (Figure* figure : figures) {
+        if (figure->isOverlap(boxRect)) {
+            int figureNumber = figure->getNumber();
+            if (figureNumber == rnumber) {
+                hide();
+                figure->hide();
+                // 或者使用 deleteLater() 函数延迟删除对象
+                // deleteLater();
+                // figure->deleteLater();
+                break;
+            }
+        }
+    }
 }
 
 int Box::getNumber()
