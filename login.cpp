@@ -15,7 +15,7 @@ Login::Login(QWidget *parent)
     QPushButton *btneasy=ui->pushEasy;
     connect(btneasy,&QPushButton::clicked,this,&Login::Push_on_Easy);
 
-    backgroundPixmap.load(":/box/img/forest.png");
+    backgroundPixmap.load(":/box/img/colorful.png");
     this->setAutoFillBackground(true);
 }
 
@@ -33,6 +33,7 @@ void Login::Push_on_Go()
     ui->labelWelcome->show();
 
     QTimer::singleShot(700,this,[=](){
+        ui->labelName->setStyleSheet("color: white;");
         ui->labelName->show();
     });
 
