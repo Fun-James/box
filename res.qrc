@@ -7,5 +7,6 @@
         <file>img/bird.png</file>
         <file>img/forest.png</file>
         <file>img/colorful.png</file>
+        <file>img/light_colorful.png</file>
     </qresource>
 </RCC>

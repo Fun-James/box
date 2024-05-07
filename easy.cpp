@@ -21,6 +21,10 @@ Easy::Easy(QWidget *parent)
 
     timeLabel->show();
 
+    //设置背景
+    backgroundPixmap.load(":/box/img/light_colorful.png");
+    this->setAutoFillBackground(true);
+
     timer->start(1000);
 
 
@@ -62,6 +66,8 @@ void Easy::onTimerTimeout() {
     if (checkAllMatched())
     {
         timer->stop(); // 停止计时器
+        //显示成绩
+        //to do...
     }
 }
 
@@ -78,4 +84,16 @@ bool Easy::checkAllMatched() {
         }
     }
     return true; // 所有Figure都已匹配
+}
+
+
+void Easy::paintEvent(QPaintEvent *event)
+{
+    QMainWindow::paintEvent(event);  // 调用基类的paintEvent以处理默认绘制行为
+
+    QPainter painter(this);
+    QRect rect = this->rect();  // 获取当前窗口的矩形区域
+    QPixmap scaledPixmap = backgroundPixmap.scaled(rect.size(), Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
+    painter.drawPixmap(rect, scaledPixmap);
+
 }

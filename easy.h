@@ -9,6 +9,10 @@
 #include <QLabel>
 #include "box.h"
 #include "figure.h"
+#include <QPaintevent>
+#include <QRect>
+#include <QPixmap>
+#include <QPainter>
 
 namespace Ui {
 class Easy;
@@ -21,7 +25,7 @@ class Easy : public QMainWindow
 public:
     explicit Easy(QWidget *parent = nullptr);
     ~Easy();
-
+    void paintEvent(QPaintEvent *event);
 
 private:
     Ui::Easy *ui;
@@ -32,6 +36,7 @@ private:
     void onPairMatched();
     void stopTimer() ;
     bool checkAllMatched();
+    QPixmap backgroundPixmap;
 
 private slots:
     void onTimerTimeout();
