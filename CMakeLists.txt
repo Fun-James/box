@@ -27,6 +27,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         res.qrc
         box.h box.cpp box.ui
         figure.h figure.cpp figure.ui
+        middle.h middle.cpp middle.ui
 
 
     )

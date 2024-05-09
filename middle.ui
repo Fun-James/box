@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Middle</class>
+ <widget class="QMainWindow" name="Middle">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1030</width>
+    <height>837</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="Box" name="box1" native="true">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>30</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>491</width>
+      <height>781</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="3" column="2">
+      <widget class="Figure" name="bird12" native="true"/>
+     </item>
+     <item row="1" column="2">
+      <widget class="Figure" name="bird6" native="true"/>
+     </item>
+     <item row="1" column="0">
+      <widget class="Figure" name="bird4" native="true"/>
+     </item>
+     <item row="3" column="0">
+      <widget class="Figure" name="bird10" native="true"/>
+     </item>
+     <item row="2" column="0">
+      <widget class="Figure" name="bird7" native="true"/>
+     </item>
+     <item row="3" column="1">
+      <widget class="Figure" name="bird11" native="true"/>
+     </item>
+     <item row="2" column="2">
+      <widget class="Figure" name="bird9" native="true"/>
+     </item>
+     <item row="0" column="2">
+      <widget class="Figure" name="bird2" native="true"/>
+     </item>
+     <item row="1" column="1">
+      <widget class="Figure" name="bird5" native="true"/>
+     </item>
+     <item row="0" column="0">
+      <widget class="Figure" name="bird1" native="true"/>
+     </item>
+     <item row="2" column="1">
+      <widget class="Figure" name="bird8" native="true"/>
+     </item>
+     <item row="0" column="1">
+      <widget class="Figure" name="bird3" native="true"/>
+     </item>
+     <item row="4" column="1">
+      <widget class="Figure" name="bird13" native="true"/>
+     </item>
+     <item row="4" column="0">
+      <widget class="Figure" name="bird14" native="true"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="Box" name="box2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>30</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+   </widget>
+   <widget class="Box" name="box3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>30</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+   </widget>
+   <widget class="Box" name="box4" native="true">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>170</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+   </widget>
+   <widget class="Box" name="box5" native="true">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>170</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+   </widget>
+   <widget class="Box" name="box6" native="true">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>170</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+   </widget>
+   <widget class="Box" name="box7" native="true">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>300</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+   </widget>
+   <widget class="Box" name="box8" native="true">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>300</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+   </widget>
+   <widget class="Box" name="box9" native="true">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>300</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+   </widget>
+   <widget class="Box" name="box10" native="true">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>430</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+   </widget>
+   <widget class="Box" name="box11" native="true">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>430</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+   </widget>
+   <widget class="Box" name="box12" native="true">
+    <property name="geometry">
+     <rect>
+      <x>900</x>
+      <y>430</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+   </widget>
+   <widget class="Box" name="box13" native="true">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>560</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+   </widget>
+   <widget class="Box" name="box14" native="true">
+    <property name="geometry">
+     <rect>
+      <x>750</x>
+      <y>560</y>
+      <width>101</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1030</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Box</class>
+   <extends>QWidget</extends>
+   <header>box.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Figure</class>
+   <extends>QWidget</extends>
+   <header>figure.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -15,6 +15,8 @@ Login::Login(QWidget *parent)
     QPushButton *btneasy=ui->pushEasy;
     connect(btneasy,&QPushButton::clicked,this,&Login::Push_on_Easy);
 
+    QPushButton *btnmiddle=ui->pushMiddle;
+    connect(btnmiddle,&QPushButton::clicked,this,&Login::Push_on_Middle);
     backgroundPixmap.load(":/box/img/colorful.png");
     this->setAutoFillBackground(true);
 }
@@ -46,6 +48,14 @@ void Login::Push_on_Go()
 void Login::Push_on_Easy()
 {
     Easy *e=new Easy();
+    this->close();
+    e->show();
+}
+
+
+void Login::Push_on_Middle()
+{
+    Middle *e=new Middle();
     this->close();
     e->show();
 }

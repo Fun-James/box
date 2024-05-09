@@ -10,6 +10,7 @@
 #include <QPainter>
 #include<QRect>
 #include<QPaintEvent>
+#include "middle.h"
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class Login;
@@ -28,6 +29,7 @@ public:
 public slots:
     void Push_on_Go();
     void Push_on_Easy();
+    void Push_on_Middle();
 
 private:
     Ui::Login *ui;
