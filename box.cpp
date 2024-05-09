@@ -114,3 +114,13 @@ int Box::getNumber()
 {
     return rnumber;
 }
+
+void Box::hardModeReset(int pre)
+{
+    // 随机生成后面 6 位数字
+    int remainingSixDigits = QRandomGenerator::global()->bounded(100000, 1000000);
+
+    // 拼接成完整的 8 位数q
+    rnumber = pre * 1000000 + remainingSixDigits;
+    ui->numberLabel->setText(QString::number(rnumber));
+}

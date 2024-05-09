@@ -32,6 +32,7 @@ public:
     void onTimeout();
     int rnumber;
     int getNumber();
+    void hardModeReset(int pre);
 private:
     Ui::Box *ui;
     QGraphicsOpacityEffect *oeffect=new QGraphicsOpacityEffect;

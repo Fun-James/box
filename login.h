@@ -11,6 +11,8 @@
 #include<QRect>
 #include<QPaintEvent>
 #include "middle.h"
+#include "hard.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class Login;
@@ -30,6 +32,7 @@ public slots:
     void Push_on_Go();
     void Push_on_Easy();
     void Push_on_Middle();
+    void Push_on_Hard();
 
 private:
     Ui::Login *ui;

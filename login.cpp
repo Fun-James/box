@@ -17,6 +17,10 @@ Login::Login(QWidget *parent)
 
     QPushButton *btnmiddle=ui->pushMiddle;
     connect(btnmiddle,&QPushButton::clicked,this,&Login::Push_on_Middle);
+
+    QPushButton *btnhard=ui->pushHard;
+    connect(btnhard,&QPushButton::clicked,this,&Login::Push_on_Hard);
+
     backgroundPixmap.load(":/box/img/colorful.png");
     this->setAutoFillBackground(true);
 }
@@ -56,6 +60,13 @@ void Login::Push_on_Easy()
 void Login::Push_on_Middle()
 {
     Middle *e=new Middle();
+    this->close();
+    e->show();
+}
+
+void Login::Push_on_Hard()
+{
+    Hard *e=new Hard();
     this->close();
     e->show();
 }

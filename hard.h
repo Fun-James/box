@@ -1,0 +1,47 @@
+#ifndef HARD_H
+#define HARD_H
+
+#include <QMainWindow>
+#include <QWidget>
+#include <QVector>
+#include <QTimer>
+#include <QTime>
+#include <QLabel>
+#include "box.h"
+#include "figure.h"
+#include <QPaintevent>
+#include <QRect>
+#include <QPixmap>
+#include <QPainter>
+
+namespace Ui {
+class Hard;
+}
+
+class Hard : public QMainWindow
+{
+    Q_OBJECT
+
+public:
+    explicit Hard(QWidget *parent = nullptr);
+    ~Hard();
+    void paintEvent(QPaintEvent *event);
+
+
+private:
+    Ui::Hard *ui;
+    QTimer *timer;
+    QTime timeElapsed;
+    QLabel *timeLabel;
+    void updateTimer();
+    void onPairMatched();
+    void stopTimer() ;
+    bool checkAllMatched();
+    QPixmap backgroundPixmap;
+
+
+private slots:
+    void onTimerTimeout();
+};
+
+#endif // HARD_H
