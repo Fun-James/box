@@ -30,14 +30,14 @@ Hard::Hard(QWidget *parent)
 
     ui->setupUi(this);
     setFixedSize(1000,820);
+    // 随机生成前两位数字
     int prefix = QRandomGenerator::global()->bounded(10, 100);
+
     QVector<int> boxNumbers;
     for (int i = 1; i <= 14; i++) {
         QString boxName = QString("box%1").arg(i);
         Box* box = findChild<Box*>(boxName);
         if (box) {
-            // 随机生成前两位数字
-
             box->hardModeReset(prefix);
             boxNumbers.append(box->getNumber());
         }
@@ -72,7 +72,8 @@ void Hard::onTimerTimeout() {
     {
         timer->stop(); // 停止计时器
         //显示成绩
-        //to do...
+        //显示成绩
+        QTimer::singleShot(700, this, &Hard::showScore); // 延迟500毫秒调用showScore函数
     }
 }
 
@@ -84,7 +85,7 @@ bool Hard::checkAllMatched() {
     for (int i = 1; i <= 14; i++) {
         QString figName = QString("bird%1").arg(i);
         Figure *figure = findChild<Figure*>(figName);
-        if (figure && !figure->isMatched()) {
+        if (figure->isMatched()==false) {
             return false; // 如果有任何未匹配的Figure，返回false
         }
     }
@@ -101,5 +102,13 @@ void Hard::paintEvent(QPaintEvent *event)
     QPixmap scaledPixmap = backgroundPixmap.scaled(rect.size(), Qt::IgnoreAspectRatio, Qt::SmoothTransformation);
     painter.drawPixmap(rect, scaledPixmap);
 
+}
+
+void Hard::showScore()
+{
+    Score *s=new Score;
+    s->setTime(getTime());
+    this->close(); // 关闭当前窗口
+    s->show(); // 显示Score窗口
 }
 

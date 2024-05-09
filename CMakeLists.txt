@@ -29,6 +29,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         figure.h figure.cpp figure.ui
         middle.h middle.cpp middle.ui
         hard.h hard.cpp hard.ui
+        score.h score.cpp score.ui
 
 
     )

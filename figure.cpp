@@ -32,7 +32,7 @@ void Figure::setFigureNumber(int n)
 {
     fignumber=n;
     ui->numberLabel->setText(QString::number(fignumber));
-    qDebug()<<fignumber;
+
 }
 
 bool Figure::isOverlap(const QRect& boxRect)

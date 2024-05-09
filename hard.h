@@ -13,6 +13,7 @@
 #include <QRect>
 #include <QPixmap>
 #include <QPainter>
+#include "score.h"
 
 namespace Ui {
 class Hard;
@@ -26,7 +27,10 @@ public:
     explicit Hard(QWidget *parent = nullptr);
     ~Hard();
     void paintEvent(QPaintEvent *event);
-
+    QTime getTime()
+    {
+        return timeElapsed;
+    }
 
 private:
     Ui::Hard *ui;
@@ -38,6 +42,7 @@ private:
     void stopTimer() ;
     bool checkAllMatched();
     QPixmap backgroundPixmap;
+    void showScore();
 
 
 private slots:

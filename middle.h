@@ -13,6 +13,7 @@
 #include <QRect>
 #include <QPixmap>
 #include <QPainter>
+#include "score.h"
 
 namespace Ui {
 class Middle;
@@ -26,7 +27,10 @@ public:
     explicit Middle(QWidget *parent = nullptr);
     ~Middle();
     void paintEvent(QPaintEvent *event);
-
+    QTime getTime()
+    {
+        return timeElapsed;
+    }
 
 private:
     Ui::Middle *ui;
@@ -38,6 +42,7 @@ private:
     void stopTimer() ;
     bool checkAllMatched();
     QPixmap backgroundPixmap;
+    void showScore();
 
 
 private slots:

@@ -67,8 +67,9 @@ void Middle::onTimerTimeout() {
     if (checkAllMatched())
     {
         timer->stop(); // 停止计时器
+
         //显示成绩
-        //to do...
+        QTimer::singleShot(700, this, &Middle::showScore); // 延迟500毫秒调用showScore函数
     }
 }
 
@@ -80,7 +81,7 @@ bool Middle::checkAllMatched() {
     for (int i = 1; i <= 14; i++) {
         QString figName = QString("bird%1").arg(i);
         Figure *figure = findChild<Figure*>(figName);
-        if (figure && !figure->isMatched()) {
+        if (figure->isMatched()==false) {
             return false; // 如果有任何未匹配的Figure，返回false
         }
     }
@@ -99,3 +100,10 @@ void Middle::paintEvent(QPaintEvent *event)
 
 }
 
+void Middle::showScore()
+{
+    Score *s=new Score;
+    s->setTime(getTime());
+    this->close(); // 关闭当前窗口
+    s->show(); // 显示Score窗口
+}
