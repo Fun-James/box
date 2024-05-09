@@ -42,7 +42,7 @@ public:
 private:
     Ui::Figure *ui;
     int fignumber;
-    bool disappear=false;
+    bool disappear;
 
 };
 

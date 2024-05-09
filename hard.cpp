@@ -71,8 +71,6 @@ void Hard::onTimerTimeout() {
     if (checkAllMatched())
     {
         timer->stop(); // 停止计时器
-        //显示成绩
-        //显示成绩
         QTimer::singleShot(700, this, &Hard::showScore); // 延迟500毫秒调用showScore函数
     }
 }

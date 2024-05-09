@@ -4,6 +4,7 @@
 Figure::Figure(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::Figure)
+    ,disappear(false)
 {
     ui->setupUi(this);
     ui->bubble->hide();
