@@ -2,7 +2,8 @@
  高级语言程序设计大作业实验报告（NKU）
 
 
-[![Video Title](https://i0.hdslb.com/bfs/archive/YOUR_COVER_IMAGE.jpg)](https://www.bilibili.com/video/BV1MM4m1o7fo)
+[![b站视频讲解](https://i0.hdslb.com/bfs/archive/YOUR_COVER_IMAGE.jpg)](https://www.bilibili.com/video/BV1MM4m1o7fo)
+
 目录
 
 [高级语言程序设计大作业实验报告](#_toc166187112)
